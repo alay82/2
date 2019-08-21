@@ -1,0 +1,26 @@
+
+
+@media print {
+ 
+    .wrapper, .main, .sidebar {
+        border: 0;
+        background: none;
+		color: #000;
+    }
+ 
+}
+
+@media print {
+.main, .sidebar {
+        width: auto;
+        float: none;
+    }
+	
+}
+
+@media print {
+.picture, .cat {
+        display: none;
+    }
+ 
+}

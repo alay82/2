@@ -1,0 +1,211 @@
+wrapper {
+	max-width: 1280px;
+	background: #66cc66;
+	margin: 0 auto;
+	}
+	
+	
+	/* === GLOBAL SETTINGS === */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #669966;
+}
+
+/* === LAYOUT === */
+
+.wrapper {
+	background-image: linear-gradient(to right, #fff 66.5625%, #a09f9f 66.66666666666667%, #99cc99 66.77083333333333%);
+	max-width: 960px;
+	margin: 0 auto;
+	border-right: 1px solid #a09f9f;
+	border-left: 1px solid #a09f9f;
+}
+
+.banner {
+	background: #99cc99;
+	border-bottom: 1px solid #99cc99;
+}
+
+.banner h1 {
+	margin-top: 0;
+	padding-top: 6.14583333333333%;
+	text-align: center;
+}
+
+.main {
+	float: left;
+	width: 67%;
+	padding: 3%;
+}
+
+.sidebar {
+	float: left;
+	width: 33%;
+	padding: 3%;
+}
+
+.site-footer {
+	min-height: 150px;
+	clear: both;
+	background: #99cc99;
+	border-top: 1px solid #a09f9f;
+}
+
+/* === NAVIGATION MENU === */
+
+.primary-menu {
+	background-color:#3399ff;
+	padding: 0.2em 0;
+}
+ 
+.primary-menu ul {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+   
+.primary-menu li {
+	display: inline;
+	margin-right: -.25em;
+}
+   
+.primary-menu a {
+	text-decoration:none;
+	color: #fff;
+	font-weight: bold;
+	background-color:#3399ff;
+	display: inline-block;
+	padding:0.2em 0.6em;
+	text-align: center;
+	border-right:1px solid white;
+}
+   
+.primary-menu a:hover {
+	background-color:#555;
+}
+
+/* === RESPONSIVE === */
+
+img, embed, object, video {
+	  max-width: 100%;
+	  height: auto;
+}
+
+@media (max-width: 767px) {
+ 
+    .main, .sidebar {
+        width: auto;
+        float: none;
+    }
+	
+	.wrapper {
+		background: #fff;
+		border: none;
+	}
+	
+	.sidebar {
+		background: #99cc99;
+ 
+	}
+	
+	.primary-menu {
+		padding: 0;
+	}
+	
+	.primary-menu li {
+		display: block;
+	}
+	
+	.primary-menu a {
+		display: block;
+		padding: 0.6em 0;
+		border-right: none;
+		border-bottom: 1px solid white;
+	}
+ } /* ending curly bracket for the media query */
+
+
+/* === PRINT === */
+
+@media print {
+ 
+  * {
+      color: #000 !important;
+  }
+  
+	/* prints the slideshow pictures, overriding the slideshow styling */
+	.rslides, .rslides * {
+		position: static !important;
+		float: none !important;
+		-webkit-backface-visibility: visible !important;
+		width: auto !important;
+		display: initial !important;
+		overflow: auto !important;
+		opacity: initial !important;
+	}
+
+ 
+   .banner, .primary-menu, .sidebar, .site-footer, .no-print {
+      display: none;
+   }
+ 
+   body {
+      background: #fff;
+      font-size: 12pt;
+   }
+ 
+   .wrapper, .main, .sidebar {
+      border: none;
+      float: none;
+      width: auto;
+   }
+ 
+} /* ending print curly bracket */
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	@media (max-width: 767px) {
+	
+	body {
+		font-size: 80%;
+	}
+ 
+    .wrapper, .main {
+		border: none;
+	}
+}
